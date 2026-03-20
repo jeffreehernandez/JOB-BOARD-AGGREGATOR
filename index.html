@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Job Board Aggregator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top-header">
+  <h1>Job Board Aggregator</h1>
+
+  <div class="header-buttons">
+    <button id="theme-toggle">🌙</button>
+    <button id="logout-btn">Logout</button>
+    <button onclick="location.href='saved.html'">Saved Jobs</button>
+    <button onclick="location.href='applied.html'">Applied Jobs</button>
+  </div>
+
+  <div class="filters">
+    <input id="search" placeholder="Search jobs...">
+
+    <select id="filter-location"><option value="">Location</option></select>
+    <select id="filter-type"><option value="">Type</option></select>
+
+    <select id="filter-date">
+      <option value="">Date</option>
+      <option value="1">Today</option>
+      <option value="3">Last 3 days</option>
+      <option value="7">Last 7 days</option>
+      <option value="30">Last 30 days</option>
+    </select>
+  </div>
+</header>
+
+<div id="jobs-container"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
